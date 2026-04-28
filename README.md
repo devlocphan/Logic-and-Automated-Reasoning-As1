@@ -1,7 +1,4 @@
-# 3806ICT Logic and Automated Reasoning — Assignment 1
-
 **First-Order Logic Sequent Calculus Prover**
-Griffith University · Trimester 1, 2026
 
 ---
 
@@ -29,10 +26,7 @@ fol_solver/
 ---
 
 ## Requirements
-
 - Python 3.9+  
-- No external dependencies
-
 ---
 
 ## Usage
@@ -40,18 +34,12 @@ fol_solver/
 ```bash
 cd fol_solver
 
-# Run built-in test suite (18 tests + TPTP PUZ001+1)
+# Run built-in test 
 python main.py tests
 
 # Run on a TPTP problem file
 python main.py tptp ../TPTP-v9.2.1/Problems/PUZ/PUZ001+1.p
-
-# Prove a single formula
-python main.py solve "p(a) | ~p(a)"
-python main.py solve "p(a), p(a)=>q(a) |- q(a)" --method improved
 ```
-
-Optional flags: `--method baseline|improved|both`, `--timeout <ms>`
 
 ---
 
@@ -82,6 +70,6 @@ TPTP FOF subset. Key operators:
 ---
 
 ## References
-
+- Zhe Hou. Fundamentals of Logic and Computation: With Practical Automated Reasoning and Verification. Springer (Texts in Computer Science), 2021.
 - Pelletier, F. J. (1986). *Seventy-five Problems for Testing Automatic Theorem Provers.*
 - TPTP Problem Library v9.2.1 — https://tptp.org
